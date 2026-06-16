@@ -24,13 +24,13 @@
 
         <!-- 精靈封面圖片 -->
         <div class="cover-image">
-        <img src="/squirrel.webp" alt="精靈封面" @error="handleImageError" />
+        <img src="/magpie.webp" alt="精靈封面" @error="handleImageError" />
       </div>
     </div>
 
    <!-- 頂部/背景裝飾區 -->
     <div class="header">
-      <h1 class="title">白面鼯鼠精靈</h1>
+      <h1 class="title">台灣藍鵲精靈</h1>
     </div>
 
     <!-- 進度條與時間軸 -->
@@ -68,7 +68,7 @@
     <!-- 隱藏的主語音頻元素 (有音波動效) -->
     <audio 
       ref="audioRef" 
-      src="/squirrel-voice.wav" 
+      src="/magpie-voice.wav" 
       crossorigin="anonymous"
       @timeupdate="onTimeUpdate"
       @loadedmetadata="onLoadedMetadata"
@@ -273,7 +273,7 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: #fbe4ae !important; 
+  background-color: #d8d0be !important; 
   overflow: hidden;
 }
 </style>
@@ -289,7 +289,7 @@ html, body {
   width: 100%;
   height: 100vh;
   
-  background: linear-gradient(145deg, #fffaf0 0%, #fbe4ae 50%, #e8cb84 100%);
+  background: linear-gradient(145deg, #fdfaf6 0%, #ebe4d8 50%, #d8d0be 100%);
   
   display: flex;
   flex-direction: column;
@@ -302,7 +302,7 @@ html, body {
   box-sizing: border-box;
   
   font-family: sans-serif;
-  color: #5c4521;
+  color: #2c3e50;
   overflow: hidden;
 }
 
@@ -324,10 +324,10 @@ html, body {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  border: 1px solid rgba(92, 74, 61, 0.2);
+  border: 1px solid rgba(44, 62, 80, 0.2);
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
-  color: #5c4a3d;
+  color: #2c3e50;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -374,7 +374,7 @@ html, body {
   margin-top: 50px; 
   margin-bottom: 50px;
   background-color:  transparent;
-  box-shadow: 0 12px 35px rgba(184, 150, 80, 0.25);
+  box-shadow: 0 12px 35px rgba(44, 62, 80, 0.2);
   transition: transform 0.3s ease;
   display: flex;
   align-items: center;
@@ -491,10 +491,10 @@ html, body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 1px solid rgba(92, 69, 33, 0.2);
+  border: 1px solid rgba(44, 62, 80, 0.2);
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
-  color: #5c4521;
+  color: #2c3e50;
   display: flex;
   align-items: center;
   justify-content: center;
