@@ -272,7 +272,7 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: 100dvh !important;
   background-color: #d8d0be !important; 
   overflow: hidden;
 }
@@ -287,7 +287,7 @@ html, body {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   
   background: linear-gradient(145deg, #fdfaf6 0%, #ebe4d8 50%, #d8d0be 100%);
   
@@ -521,6 +521,23 @@ html, body {
   }
   100% {
     transform: scale(1); /* 吐氣：慢慢縮回原本大小 */
+  }
+}
+
+/* 🌟 iPhone 底部橫條防護罩 */
+@media (max-height: 780px) {
+  .player-container {
+    padding-bottom: calc(40px + env(safe-area-inset-bottom));
+    padding-top: 20px;
+  }
+  
+  .cover-wrapper {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .header {
+    margin-bottom: 25px;
   }
 }
 
