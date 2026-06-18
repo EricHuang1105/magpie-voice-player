@@ -298,7 +298,7 @@ html, body {
   
   /* 保持先前完美的彈性安全間距 */
   padding-top: 40px;
-  padding-bottom: 120px; 
+  padding-bottom: calc(80px + env(safe-area-inset-bottom));
   box-sizing: border-box;
   
   font-family: sans-serif;
@@ -521,23 +521,6 @@ html, body {
   }
   100% {
     transform: scale(1); /* 吐氣：慢慢縮回原本大小 */
-  }
-}
-
-/* 🌟 iPhone 底部橫條防護罩 */
-@media (max-height: 780px) {
-  .player-container {
-    padding-bottom: calc(40px + env(safe-area-inset-bottom));
-    padding-top: 20px;
-  }
-  
-  .cover-wrapper {
-    margin-top: 20px;
-    margin-bottom: 25px;
-  }
-  
-  .header {
-    margin-bottom: 25px;
   }
 }
 
