@@ -523,41 +523,68 @@ html, body {
   }
 }
 
-/* 🌟 矮螢幕/工具列擠壓時：整體等比例縮小 */
+/*  矮螢幕/工具列擠壓時：整體等比例縮小 */
 @media (max-height: 740px) {
-  
+  /* 1. 稍微減少最外層的上下距離 */
   .player-container {
-    padding-top: 20px;
-    padding-bottom: calc(50px + env(safe-area-inset-bottom));
+    padding-top: 50px;
+    padding-bottom: calc(20px + env(safe-area-inset-bottom));
   }
   
-  /* 1. 縮小圖片外框與上下間距 */
+  /* 2. 外框微微縮小到 280px (原本是 300px) */
   .cover-wrapper {
     
-    width: 260px;
-    height: 260px;
-    margin-top: 25px;
-    margin-bottom: 30px;
+    width: 280px;
+    height: 280px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   
-  /* 2. 縮小裡面的精靈圖片 */
+  /* 3. 裡面的圖片也跟著微縮 */
   .cover-image {
-    width: 200px;
-    height: 200px;
+    width: 210px;
+    height: 210px;
   }
   
-  /* 3. 縮小 Logo 並調整位置 */
+  /* 4. Logo 微縮並稍微調整位置，確保不出框 */
   .cover-logo {
     width: 60px;
     top: 12px;
-    left: 12px;
+    left: 14px;
   }
   
-  /* 4. 縮小標題與下方的距離 */
+  /* 5. 縮小標題與下方的距離 */
   .header {
-    margin-bottom: 25px;
+    margin-bottom: 40px;
   }
 }
+
+/* 6. 縮小進度條區塊的下方距離 (原本是 40px) */
+  .progress-section {
+    margin-bottom: 40px;
+  }
+
+  /* 7. 縮小主播放按鈕與裡面的圖示 (原本是 60px / 30px) */
+  .play-btn {
+    width: 50px;
+    height: 50px;
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* 8. 縮小底部控制區的按鈕間距，讓畫面更緊湊 (原本是 20px) */
+  .controls-section {
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+
+  /* 9. 讓旁邊的動態音波也跟著稍微縮小一點比例 */
+  .visualizer-canvas {
+    width: 60px !important;
+    height: 30px !important;
+  }
 
 </style>
 
