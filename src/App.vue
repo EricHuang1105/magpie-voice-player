@@ -524,5 +524,34 @@ html, body {
   }
 }
 
+/* 🌟 矮螢幕/工具列擠壓時：整體等比例縮小 */
+@media (max-height: 740px) {
+  /* 1. 縮小圖片外框與上下間距 */
+  .cover-wrapper {
+    width: 240px;
+    height: 240px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  
+  /* 2. 縮小裡面的精靈圖片 */
+  .cover-image {
+    width: 180px;
+    height: 180px;
+  }
+  
+  /* 3. 縮小 Logo 並調整位置 */
+  .cover-logo {
+    width: 55px;
+    top: 45px;
+    left: 45px;
+  }
+  
+  /* 4. 縮小標題與下方的距離 */
+  .header {
+    margin-bottom: 25px;
+  }
+}
+
 </style>
 
