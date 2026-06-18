@@ -364,6 +364,7 @@ html, body {
 
 
 .cover-wrapper {
+  position: relative;
   width: 300px;  
   height: 300px; 
   border-radius: 24px; 
@@ -375,26 +376,24 @@ html, body {
   margin-bottom: 50px;
   background-color:  transparent;
   box-shadow: 0 12px 35px rgba(44, 62, 80, 0.2);
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* 🌟 新增 LOGO 的絕對定位與尺寸設定 */
+/* 新增 LOGO 的絕對定位與尺寸設定 */
 .cover-logo {
   position: absolute;
-  /* 透過 top 和 right 調整 LOGO 在框框內的右上角位置 */
-  top: 60px;    /* 距離框框頂部的距離 */
-  left: 60px;  /* 距離框框右側的距離 */
   
-  /* 控制 LOGO 圖片的大小，您可以根據實際圖片比例微調 */
+  top: 8px; 
+  left: 10px; 
+  
   width: 70px;  
   height: auto;
   
-  /* 確保 LOGO 永遠浮在最上層，且不參與任何呼吸動畫 */
   z-index: 5; 
-  pointer-events: none; /* 讓滑鼠點擊可以穿過 LOGO，不影響操作 */
+  pointer-events: none;
 }
 
 .cover-logo img {
@@ -526,25 +525,32 @@ html, body {
 
 /* 🌟 矮螢幕/工具列擠壓時：整體等比例縮小 */
 @media (max-height: 740px) {
+  
+  .player-container {
+    padding-top: 20px;
+    padding-bottom: calc(50px + env(safe-area-inset-bottom));
+  }
+  
   /* 1. 縮小圖片外框與上下間距 */
   .cover-wrapper {
-    width: 240px;
-    height: 240px;
-    margin-top: 20px;
-    margin-bottom: 25px;
+    
+    width: 260px;
+    height: 260px;
+    margin-top: 25px;
+    margin-bottom: 30px;
   }
   
   /* 2. 縮小裡面的精靈圖片 */
   .cover-image {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
   }
   
   /* 3. 縮小 Logo 並調整位置 */
   .cover-logo {
-    width: 55px;
-    top: 45px;
-    left: 45px;
+    width: 60px;
+    top: 12px;
+    left: 12px;
   }
   
   /* 4. 縮小標題與下方的距離 */
