@@ -555,9 +555,9 @@ html, body {
   
   /* 5. 縮小標題與下方的距離 */
   .header {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
-}
+
 
 /* 6. 縮小進度條區塊的下方距離 (原本是 40px) */
   .progress-section {
@@ -582,9 +582,10 @@ html, body {
 
   /* 9. 讓旁邊的動態音波也跟著稍微縮小一點比例 */
   .visualizer-canvas {
-    width: 60px !important;
-    height: 30px !important;
+    width: 100px !important;
+    height: 60px !important;
   }
+}
 
 </style>
 
