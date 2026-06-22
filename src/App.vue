@@ -315,7 +315,7 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100dvh !important;
-  background-color: #d8d0be !important; 
+  background-color: #e3ccb8 !important; 
   overflow: hidden;
 }
 </style>
@@ -331,7 +331,7 @@ html, body {
   width: 100%;
   height: 100dvh;
   
-  background: linear-gradient(145deg, #fdfaf6 0%, #ebe4d8 50%, #d8d0be 100%);
+  background: linear-gradient(145deg, #fdfbf7 0%, #f0e5d3 50%, #e3ccb8 100%);
   
   display: flex;
   flex-direction: column;
@@ -451,7 +451,7 @@ html, body {
   margin-top: 50px; 
   margin-bottom: 50px;
   background-color:  transparent;
-  box-shadow: 0 12px 35px rgba(44, 62, 80, 0.2);
+  box-shadow: 0 12px 35px rgba(139, 107, 76, 0.25);
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
